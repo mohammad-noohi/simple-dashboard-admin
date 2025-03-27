@@ -1,10 +1,11 @@
-import { Avatar, Badge, Button, Container, IconButton, Menu, MenuItem, Typography } from "@mui/material";
+import { Avatar, Badge, Container, IconButton, Menu, MenuItem, Typography } from "@mui/material";
 // Icons
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import LanguageIcon from "@mui/icons-material/Language";
 import SettingsIcon from "@mui/icons-material/Settings";
 import { useState } from "react";
 import "./TopBar.css";
+import { Link } from "react-router-dom";
 
 // react-router-dom
 
@@ -26,12 +27,12 @@ function TopBar() {
   return (
     <>
       <div className="topbar">
-        <Container>
+        <Container maxWidth="xxl">
           <div className="topbar-wrapper">
             <div className="topbar__left">
-              <a href="/" className="logo">
+              <Link className="link" to="/">
                 <Typography variant="h5">my panel ❤️</Typography>
-              </a>
+              </Link>
             </div>
             <div className="topbar__right">
               <div className="actions">
