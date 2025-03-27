@@ -1,16 +1,21 @@
 import "./App.css";
 import routes from "./routes";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { useRoutes } from "react-router-dom";
+
 // components
 import TopBar from "./components/topbar/TopBar";
+import SideBar from "./components/sidebar/SideBar";
 
 function App() {
-  const router = createBrowserRouter(routes);
+  const router = useRoutes(routes);
 
   return (
     <>
       <TopBar />
-      <RouterProvider router={router} />
+      <div className="container">
+        <SideBar />
+        {router}
+      </div>
     </>
   );
 }
