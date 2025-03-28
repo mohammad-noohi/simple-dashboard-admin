@@ -1,0 +1,64 @@
+.widgetLg {
+  flex: 2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.74);
+}
+
+.widgetLg__title {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.widgetLg__table {
+  width: 100%;
+  border-spacing: 20px;
+}
+
+.widgetLg__table th {
+  text-align: left;
+}
+
+.customer__data {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.customer__img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.customer__transaction-date,
+.customer__transaction-amount {
+  font-weight: 300;
+}
+
+.customer__name {
+  text-transform: capitalize;
+}
+
+.widgetLg__btn {
+  padding: 5px 7px;
+  border: none;
+  border-radius: 10px;
+}
+
+.widgetLg__btn.approved {
+  color: #3bb077;
+  background-color: #e5faf2;
+}
+
+.widgetLg__btn.decline {
+  color: #d95078;
+  background-color: #fff0f1;
+}
+
+.widgetLg__btn.pending {
+  color: #2a7ade;
+  background-color: #ebf1fe;
+}

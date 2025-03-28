@@ -57,10 +57,12 @@ function TopBar() {
 
               {/* Profile Dropdown */}
               <IconButton variant="contained" color="primary" onClick={handleClick}>
-                <Avatar src="https://mui.com/static/images/avatar/1.jpg" />
+                <Avatar src="https://avatars.githubusercontent.com/u/109421506?v=4" />
               </IconButton>
               <Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
-                <MenuItem onClick={handleClose}>profile</MenuItem>
+                <a href="https://github.com/mohammad-noohi" className="link">
+                  <MenuItem onClick={handleClose}>profile</MenuItem>
+                </a>
                 <MenuItem onClick={handleClose}>my account</MenuItem>
                 <MenuItem onClick={handleClose}>log out</MenuItem>
               </Menu>

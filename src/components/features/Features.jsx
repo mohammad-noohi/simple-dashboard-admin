@@ -20,7 +20,7 @@ export default function Features() {
       </div>
 
       <div className="feature">
-        <span className="feature__title">Revanue</span>
+        <span className="feature__title">Sales</span>
         <div className="feature__container">
           <span className="feature__money">$2,415</span>
           <span className="feature__rate">
@@ -32,7 +32,7 @@ export default function Features() {
       </div>
 
       <div className="feature">
-        <span className="feature__title">Revanue</span>
+        <span className="feature__title">Cost</span>
         <div className="feature__container">
           <span className="feature__money">$2,415</span>
           <span className="feature__rate">
