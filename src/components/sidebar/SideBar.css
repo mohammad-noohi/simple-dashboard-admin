@@ -4,7 +4,7 @@
   background-color: rgb(251, 251, 255);
   position: sticky;
   top: 80px;
-  max-width: 300px; /* test code */
+  /* max-width: 300px; */
 }
 
 .sidebar-wrapper {
@@ -24,6 +24,9 @@
 .sidebar-list {
   list-style-type: none;
   padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .sidebar-list-item {

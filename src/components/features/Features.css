@@ -1,8 +1,10 @@
 .features {
   width: 100%;
   display: flex;
-  /* align-items: flex-start; */
+  align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .feature {
@@ -10,7 +12,6 @@
   margin: 0px 20px;
   padding: 30px;
   border-radius: 10px;
-  cursor: pointer;
   box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
 }
 
@@ -40,6 +41,7 @@
   font-size: 24px;
   margin-left: 5px;
   color: green;
+  cursor: pointer;
 }
 
 .feature__icon--negative {

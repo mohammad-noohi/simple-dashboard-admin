@@ -5,6 +5,7 @@
   top: 0;
   width: 100%;
   padding: 10px 0;
+  z-index: 999;
 }
 
 .topbar-wrapper {

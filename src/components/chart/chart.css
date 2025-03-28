@@ -1,0 +1,12 @@
+.chart {
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
+  min-height: 200px;
+}
+
+.chart__title {
+  margin-bottom: 15px;
+}
