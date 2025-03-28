@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { products, monthesSale } from "@/data";
 import Chart from "@/components/chart/Chart";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { Publish } from "@mui/icons-material";
 
 export default function Product() {
   const urlParams = useParams();
@@ -34,7 +35,6 @@ export default function Product() {
         <div className="product__top-right">
           <div className="product__info-top">
             <img src="./../../../src/assets/images/products/airpod-max.jpg" className="product__img" />
-            {/* <img src="@/assets/images/products/airpod-max.jpg" className="product__img" /> */}
             <span className="product__name">product name</span>
           </div>
 
@@ -60,6 +60,38 @@ export default function Product() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="product__bottom">
+        <form className="product__form">
+          <div className="product__form-left">
+            <label htmlFor="">product name</label>
+            <input type="text" placeholder="airpod max" />
+
+            <label htmlFor="">in stock</label>
+            <select name="" id="">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+
+            <label htmlFor="">active</label>
+            <select name="" id="">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </div>
+          <div className="product__form-right">
+            <div className="product__uploader">
+              <img src="./../../../src/assets/images/products/airpod-max.jpg" alt="" className="product__uploader-img" />
+              <label htmlFor="">
+                <Publish />
+              </label>
+              <input type="file" style={{ display: "none" }} />
+            </div>
+
+            <button className="product__btn">upload ( Edit )</button>
+          </div>
+        </form>
       </div>
     </div>
   );
