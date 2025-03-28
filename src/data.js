@@ -208,4 +208,43 @@ const userRows = [
   },
 ];
 
-export { salesData, newMembers, transactions, userRows };
+const products = [
+  {
+    id: 1,
+    title: "asus tuf gaming",
+    pic: "asus-tuf.jpg",
+    price: 890,
+  },
+  {
+    id: 2,
+    title: "iphone 16 pro max",
+    pic: "iphone-16-pro-max.jpg",
+    price: 1300,
+  },
+  {
+    id: 3,
+    title: "ipad pro 11 inch",
+    pic: "ipad-pro.jpg",
+    price: 760,
+  },
+  {
+    id: 4,
+    title: "mackbook pro 13 inch",
+    pic: "mackbook-pro.jpg",
+    price: 1240,
+  },
+  {
+    id: 5,
+    title: "airpod max",
+    pic: "airpod-max.jpg",
+    price: 500,
+  },
+  {
+    id: 6,
+    title: "apple watch",
+    pic: "applw-watch-6.jpg",
+    price: 776,
+  },
+];
+
+export { salesData, newMembers, transactions, userRows, products };

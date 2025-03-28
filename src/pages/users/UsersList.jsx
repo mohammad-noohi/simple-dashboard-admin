@@ -32,7 +32,7 @@ function UsersList() {
 
       renderCell: params => {
         return (
-          <Link className="link" to={``}>
+          <Link className="link" to="">
             <div className="userlist__user">
               <img src={params.row.avatar} alt="" className="userlist__user-img" />
               <span>{params.row.username}</span>
