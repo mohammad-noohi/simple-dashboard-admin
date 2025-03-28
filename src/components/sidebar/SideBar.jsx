@@ -14,7 +14,7 @@ import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
 import ReportIcon from "@mui/icons-material/Report";
 // react-router-dom
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function SideBar() {
   return (
@@ -23,12 +23,16 @@ export default function SideBar() {
         <div className="sidebar-menu">
           <h3 className="sidebar-title">dashboard</h3>
           <ul className="sidebar-list">
-            <Link className="link" to="/">
-              <li className="sidebar-list-item active">
+            <NavLink
+              className={({ isActive }) => {
+                return `link ${isActive && "active"}`;
+              }}
+              to="/">
+              <li className="sidebar-list-item">
                 <LineStyleIcon className="sidebar-icon" />
                 <span>home</span>
               </li>
-            </Link>
+            </NavLink>
 
             <li className="sidebar-list-item">
               <TimeLineIcon className="sidebar-icon" />
@@ -45,26 +49,26 @@ export default function SideBar() {
         <div className="sidebar-menu">
           <h3 className="sidebar-title">quick menu</h3>
           <ul className="sidebar-list">
-            <Link className="link" to="/users">
+            <NavLink className={({ isActive }) => `link ${isActive && "active"}`} to="/users">
               <li className="sidebar-list-item">
                 <PermIdentityIcon className="sidebar-icon" />
                 <span>users</span>
               </li>
-            </Link>
+            </NavLink>
 
-            <Link to="/newUser" className="link">
+            <NavLink to="/newUser" className={({ isActive }) => `link ${isActive && "active"}`}>
               <li className="sidebar-list-item">
                 <PermIdentityIcon className="sidebar-icon" />
                 <span>new user</span>
               </li>
-            </Link>
+            </NavLink>
 
-            <Link className="link" to="/products">
+            <NavLink className={({ isActive }) => `link ${isActive && "active"}`} to="/products">
               <li className="sidebar-list-item">
                 <StoreFrontIcon className="sidebar-icon" />
                 <span>products</span>
               </li>
-            </Link>
+            </NavLink>
             <li className="sidebar-list-item">
               <AttachMoneyIcon className="sidebar-icon" />
               <span>transactions</span>

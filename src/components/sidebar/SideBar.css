@@ -4,7 +4,7 @@
   background-color: rgb(251, 251, 255);
   position: sticky;
   top: 80px;
-  /* max-width: 300px; */
+  max-width: 300px;
 }
 
 .sidebar-wrapper {
@@ -38,7 +38,7 @@
 }
 
 .sidebar-list-item:hover,
-.sidebar-list-item.active {
+.link.active .sidebar-list-item {
   background-color: rgb(240, 240, 255);
 }
 
