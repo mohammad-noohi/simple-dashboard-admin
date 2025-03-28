@@ -247,4 +247,35 @@ const products = [
   },
 ];
 
-export { salesData, newMembers, transactions, userRows, products };
+const monthesSale = [
+  {
+    name: "Jan",
+    sales: 4000,
+  },
+  {
+    name: "Feb",
+    sales: 3000,
+  },
+  {
+    name: "Mar",
+    sales: 5000,
+  },
+];
+
+/* 
+
+recommended structure for prodcut sales compration :
+
+const productsSaleData = [
+  {
+    title : 'asus',
+    data : {
+      name : 'Jan',
+      sales : 4000,
+    }
+  }
+]
+
+*/
+
+export { salesData, newMembers, transactions, userRows, products, monthesSale };
