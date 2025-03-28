@@ -157,4 +157,55 @@ const transactions = [
   },
 ];
 
-export { salesData, newMembers, transactions };
+const userRows = [
+  {
+    id: 1,
+    username: "mohammad",
+    avatar: "https://mui.com/static/images/avatar/1.jpg",
+    status: "active",
+    transaction: "129.45",
+    email: "noohi.m98@gmail.com",
+  },
+  {
+    id: 2,
+    username: "ali",
+    avatar: "https://mui.com/static/images/avatar/2.jpg",
+    status: "active",
+    transaction: "129.45",
+    email: "noohi.m98@gmail.com",
+  },
+  {
+    id: 3,
+    username: "maral",
+    avatar: "https://mui.com/static/images/avatar/3.jpg",
+    status: "active",
+    transaction: "129.45",
+    email: "noohi.m98@gmail.com",
+  },
+  {
+    id: 4,
+    username: "lilia",
+    avatar: "https://mui.com/static/images/avatar/4.jpg",
+    status: "active",
+    transaction: "129.45",
+    email: "noohi.m98@gmail.com",
+  },
+  {
+    id: 5,
+    username: "amir hosein",
+    avatar: "https://mui.com/static/images/avatar/5.jpg",
+    status: "active",
+    transaction: "129.45",
+    email: "noohi.m98@gmail.com",
+  },
+  {
+    id: 6,
+    username: "adrian",
+    avatar: "https://mui.com/static/images/avatar/6.jpg",
+    status: "active",
+    transaction: "129.45",
+    email: "noohi.m98@gmail.com",
+  },
+];
+
+export { salesData, newMembers, transactions, userRows };

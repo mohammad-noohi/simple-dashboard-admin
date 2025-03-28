@@ -9,7 +9,7 @@ export default function WidgetSm() {
       <span className="widgetSm__title">new join members</span>
       <ul className="widgetSm__list">
         {newMembers.map(member => (
-          <li className="widgetSm__list-item">
+          <li key={member.id} className="widgetSm__list-item">
             <img src={member.img} alt="user profile" className="widgetSm__img" />
             <div className="widgetSm__user">
               <span className="widgetSm__user-name">{member.name}</span>

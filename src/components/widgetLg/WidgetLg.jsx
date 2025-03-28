@@ -21,13 +21,13 @@ export default function WidgetLg() {
         </thead>
         <tbody>
           {transactions.map(transaction => (
-            <tr className="customer">
+            <tr key={transaction.id} className="customer">
               <td className="customer__data">
                 <img className="customer__img" src={transaction.img} alt="customer profile" />
                 <span className="customer__name">{transaction.customer}</span>
               </td>
               <td className="customer__transaction-date">{transaction.date}</td>
-              <td className="customer__transaction-amount">{transaction.amount}</td>
+              <td className="customer__transaction-amount">$ {transaction.amount}</td>
               <td>
                 <Button type={transaction.status} />
               </td>
