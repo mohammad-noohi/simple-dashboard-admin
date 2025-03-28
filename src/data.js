@@ -49,4 +49,37 @@ const salesData = [
   },
 ];
 
-export { salesData };
+const newMembers = [
+  {
+    id: 1,
+    name: "mohammad noohi",
+    title: "web developer",
+    img: "https://mui.com/static/images/avatar/1.jpg",
+  },
+  {
+    id: 2,
+    name: "amir ali",
+    title: "UI Designer",
+    img: "https://mui.com/static/images/avatar/1.jpg",
+  },
+  {
+    id: 3,
+    name: "Zahra",
+    title: "SEO",
+    img: "https://mui.com/static/images/avatar/1.jpg",
+  },
+  {
+    id: 4,
+    name: "Maryam",
+    title: "Manager",
+    img: "https://mui.com/static/images/avatar/1.jpg",
+  },
+  {
+    id: 5,
+    name: "Sajad",
+    title: "CEO",
+    img: "https://mui.com/static/images/avatar/1.jpg",
+  },
+];
+
+export { salesData, newMembers };
